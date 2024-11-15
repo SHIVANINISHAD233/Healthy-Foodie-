@@ -1,0 +1,288 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hamburger-lines {
+  display: none;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+}
+
+.menu-items li {
+  margin: 0 10px;
+}
+
+.menu-items a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.menu-items a:hover {
+  background-color: #555;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Showcase Area */
+.showcase-area {
+  background-image: url('https://i.postimg.cc/1XvYM67V/restraunt2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.showcase-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-size: 3rem;
+}
+
+.btn-primary {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ff5252;
+}
+
+/* About Section */
+#about {
+  padding: px 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-img img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Food Section */
+#food {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.food-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.food-type {
+  width: 30%;
+  margin: 10px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.img-content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Food Menu Section */
+#food-menu {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.food-menu-item {
+  width: 30%;
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.food-img img {
+  width: 100%;
+  height: auto;
+}
+
+.food-description {
+  padding: 10px;
+}
+
+.food-titile {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.food-price {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+/* Testimonial Section */
+#testimonials {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.testimonial-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.testimonial-box {
+  width: 30%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+}
+
+.customer-photo img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.customer-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.star-rating .fa {
+  color: #ff6b6b;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+  font-size: 1rem;
+}
+
+.form-container .btn-primary {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Footer */
+#footer {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+}
